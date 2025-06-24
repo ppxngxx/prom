@@ -1,0 +1,237 @@
+body {
+    /* ...existing code... */
+    background: url('https://www.easthailand.com/images/editor/3980689.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #222;
+    font-family: 'Kanit', 'Sarabun', Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #1976d2 70%, #00bcd4 100%);
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+    border-radius: 0 0 24px 24px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.08em;
+    padding: 10px 24px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(25,118,210,0.04);
+}
+nav a:hover, nav a.active {
+    background: #fff;
+    color: #1976d2;
+    box-shadow: 0 2px 8px rgba(0,188,212,0.10);
+}
+
+.container {
+    max-width: 520px;
+    margin: 40px auto 0 auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+main {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+    padding: 36px 28px 32px 28px;
+    margin: 0;
+    max-width: 500px;
+    margin: 32px auto;
+}
+
+.calc-section {
+    margin-bottom: 32px;
+    animation: fadeIn 0.5s;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.calc-section h2 {
+    color: #1976d2;
+    margin-bottom: 18px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px 0;
+    font-weight: 500;
+    color: #1976d2;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    background: #f4faff;
+    border: 1.5px solid #b3c6e0;
+    border-radius: 8px;
+    font-size: 1.08em;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type="number"]:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+    background: #e3f0ff;
+}
+
+button {
+    background: linear-gradient(90deg, #1976d2 70%, #00bcd4 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #00bcd4 70%, #1976d2 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(25,118,210,0.12);
+}
+
+#budgetResult, #changeResult, #loanResult {
+    background: #e3f0ff;
+    border-radius: 8px;
+    padding: 16px 14px;
+    margin-top: 22px;
+    font-size: 1.08em;
+    color: #1565c0;
+    box-shadow: 0 1px 4px rgba(25,118,210,0.04);
+    min-height: 32px;
+    text-align: center;
+}
+
+.info-section {
+    background: #f4faff;
+    border: 1.5px solid #b3c6e0;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.06);
+    padding: 28px 18px 18px 18px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.info-section h2 {
+    color: #1976d2;
+    margin-bottom: 18px;
+    font-size: 1.18em;
+    text-align: center;
+}
+.info-section ol {
+    padding-left: 18px;
+    text-align: left;
+    display: inline-block;
+}
+.info-section li {
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+.sticker-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    max-width: 32px;
+    width: 100%;
+    background: transparent;
+}
+.ratio-table {
+    margin: 10px 0;
+}
+.ratio-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(25,118,210,0.04);
+}
+.ratio-table th, .ratio-table td {
+    border: 1px solid #b3c6e0;
+    padding: 8px 10px;
+    text-align: center;
+}
+.ratio-table th {
+    background: #e3f0ff;
+    color: #1976d2;
+}
+.formula {
+    display: inline-block;
+    background: #fffbe7;
+    color: #d17b00;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin: 2px 0;
+    font-family: 'Kanit', 'Sarabun', Arial, sans-serif;
+    font-size: 0.97em;
+    text-align: center;
+}
+footer {
+    background: linear-gradient(90deg, #1976d2 70%, #00bcd4 100%);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 0 0 18px 18px;
+    margin-top: 40px;
+    font-size: 1em;
+    box-shadow: 0 -2px 8px rgba(25,118,210,0.04);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 0 4px;
+    }
+    main {
+        padding: 18px 4px 18px 4px;
+    }
+    header h1 {
+        font-size: 1.3em;
+    }
+    nav ul {
+        gap: 10px;
+    }
+}
